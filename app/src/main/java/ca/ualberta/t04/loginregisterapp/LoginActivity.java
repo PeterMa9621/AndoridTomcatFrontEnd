@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     AsyncHttpClient client;
     RequestParams params;
 
-    String MYURL = "http://192.168.191.2:8080/MyFirstApp/Login";
+    String MYURL = "http://18.222.210.6:8080/AnimalHelper/Login";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

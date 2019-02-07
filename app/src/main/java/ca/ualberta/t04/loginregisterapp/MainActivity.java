@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     RequestParams params;
     AsyncHttpClient client;
 
-    String MYURL = "http://192.168.191.2:8080/MyFirstApp/Register";
+    String MYURL = "http://18.222.210.6:8080/AnimalHelper/Register";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                         //super.onFailure(statusCode, headers, responseString, throwable);
+                        Log.d("mjy", responseString);
                         Log.d("mjy", throwable.getMessage());
                         Toast.makeText(MainActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                     }
